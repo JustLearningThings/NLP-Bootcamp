@@ -73,3 +73,5 @@ for (word, tag) in pos:
     pos_dict[tag].append(word)
 
 pos_tag_fd = FreqDist(tag for (word, tag) in pos).most_common()
+# Se observa ca cea mai frecventa parte de vorbire este substantivul. In cazul corpus-ului nostru asta este un lucru motivat de faptul ca continutul este o lucrare stiintifica si se opereaza cu multi termeni.
+# Cele mai putin utilizate parti de vorbire din corpus-ul dat este adverbul comparativ, adjectivul in superlativ si verbul in present tense. Toate aceste se intalnesc o singura data in corpus-ul studiat.
